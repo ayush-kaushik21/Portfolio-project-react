@@ -1,11 +1,11 @@
-import logo from './logo.svg'
-import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/js/bootstrap.bundle'
+import Navbar from './Components/Navbar'
 
 function App() {
   return (
     <>
-      <h1>Project Setup</h1>
+      <Navbar />
     </>
   )
 }
