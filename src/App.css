@@ -7,7 +7,7 @@
 
 body {
   width: 100vw;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 .App {
@@ -55,6 +55,10 @@ body {
   background-color: #444;
 }
 
+.row {
+  --bs-gutter-x: 0rem !important;
+}
+
 .brand-style {
   font-family: 'Permanent Marker', cursive;
   color: white;
@@ -79,6 +83,81 @@ a:hover {
 }
 
 li:hover {
-  /* margin-top: 2px; */
   border-top: 2px solid #f9ab00;
+}
+
+.wrapper {
+  position: absolute;
+  height: 88.4vh;
+  width: 100wh;
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)), url('/src/Components/kari-shea-1SAnrIxw5OY-unsplash.jpg') center center/cover;
+}
+
+.content {
+  z-index: 9;
+  height: 88vh;
+}
+
+.btn-contact {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #f9ab00;
+  border: 2px solid #f9ab00;
+}
+
+.btn-contact:hover {
+  background-color: #f9ab00;
+  color: white;
+  transition: 0.5s ease-in-out all;
+}
+
+.btn-contact:active {
+  transform: scale(1.1);
+  /* border: 2px solid #f9ab00; */
+}
+
+.content h1 {
+  color: #f9ab00;
+  text-transform: capitalize;
+}
+
+.content h4 {
+  color: white;
+  margin: 1rem 0;
+}
+
+.typed-text {
+  font-size: 2rem;
+  color: white;
+}
+
+.tsparticles-canvas-el {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+/* New Style */
+
+button {
+  z-index: 7;
+}
+
+@media(max-width:768px) {
+  .content h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .navbar-brand {
+    margin-left: 1.5rem;
+  }
+  .navbar-toggler {
+    margin-right: 1rem;
+  }
+  .nav-link {
+    margin-left: 1.5rem;
+  }  
 }
